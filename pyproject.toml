@@ -1,0 +1,22 @@
+[project]
+name = "claims-crm-graph-demo"
+version = "0.1.0"
+description = "Fraud-claims case file demo: similarity retrieval, clustering, a Neo4j knowledge graph, a ChromaDB vector store, CRM records and causal validation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+    "neo4j>=5.20",
+    "chromadb>=1.0",
+    "python-dotenv>=1.0",
+    "ipykernel>=6.29",
+    "jupyterlab>=4.1",
+    "groq>=0.9",                 # client for the written case summary (needs GROQ_API_KEY in .env)
+]
+
+[tool.uv]
+package = false              # this is a notebook project, not an installable package
